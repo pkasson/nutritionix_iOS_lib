@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39D560C21944D2AB0010FB77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D560C11944D2AB0010FB77 /* Foundation.framework */; };
+		39D560C41944D2AB0010FB77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D560C31944D2AB0010FB77 /* CoreGraphics.framework */; };
+		39D560C61944D2AB0010FB77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D560C51944D2AB0010FB77 /* UIKit.framework */; };
+		39D560CC1944D2AB0010FB77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39D560CA1944D2AB0010FB77 /* InfoPlist.strings */; };
+		39D560CE1944D2AB0010FB77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D560CD1944D2AB0010FB77 /* main.m */; };
+		39D560D21944D2AB0010FB77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D560D11944D2AB0010FB77 /* AppDelegate.m */; };
+		39D560D51944D2AB0010FB77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D560D31944D2AB0010FB77 /* Main.storyboard */; };
+		39D560D81944D2AB0010FB77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D560D71944D2AB0010FB77 /* ViewController.m */; };
+		39D560DA1944D2AB0010FB77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D560D91944D2AB0010FB77 /* Images.xcassets */; };
+		39D560E11944D2AB0010FB77 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D560E01944D2AB0010FB77 /* XCTest.framework */; };
+		39D560E21944D2AB0010FB77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D560C11944D2AB0010FB77 /* Foundation.framework */; };
+		39D560E31944D2AB0010FB77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D560C51944D2AB0010FB77 /* UIKit.framework */; };
+		39D560EB1944D2AB0010FB77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39D560E91944D2AB0010FB77 /* InfoPlist.strings */; };
+		39D560ED1944D2AB0010FB77 /* NutritionixExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D560EC1944D2AB0010FB77 /* NutritionixExampleTests.m */; };
+		39D560FB1944D32E0010FB77 /* barcodeBeep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39D560FA1944D32E0010FB77 /* barcodeBeep.mp3 */; };
+		39D561061944D3430010FB77 /* commonFoods.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D560FC1944D3430010FB77 /* commonFoods.png */; };
+		39D561071944D3430010FB77 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D560FD1944D3430010FB77 /* logo.png */; };
+		39D561081944D3430010FB77 /* nutritionix29.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D560FE1944D3430010FB77 /* nutritionix29.png */; };
+		39D561091944D3430010FB77 /* nutritionix40.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D560FF1944D3430010FB77 /* nutritionix40.png */; };
+		39D5610A1944D3430010FB77 /* nutritionix58.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D561001944D3430010FB77 /* nutritionix58.png */; };
+		39D5610B1944D3430010FB77 /* nutritionix60.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D561011944D3430010FB77 /* nutritionix60.png */; };
+		39D5610C1944D3430010FB77 /* nutritionix80.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D561021944D3430010FB77 /* nutritionix80.png */; };
+		39D5610D1944D3430010FB77 /* nutritionix160.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D561031944D3430010FB77 /* nutritionix160.png */; };
+		39D5610E1944D3430010FB77 /* packagedFoods.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D561041944D3430010FB77 /* packagedFoods.png */; };
+		39D5610F1944D3430010FB77 /* restaurant.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D561051944D3430010FB77 /* restaurant.png */; };
+		39D561191944D42A0010FB77 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D561161944D42A0010FB77 /* Constants.m */; };
+		39D5611A1944D42A0010FB77 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D561181944D42A0010FB77 /* Utility.m */; };
+		39D561211944D47D0010FB77 /* BarCodeScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D561201944D47D0010FB77 /* BarCodeScannerViewController.m */; };
+		39D5616819453B5F0010FB77 /* barcode-icon-614x460.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D5616519453B5F0010FB77 /* barcode-icon-614x460.png */; };
+		39D5616919453B5F0010FB77 /* barcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D5616619453B5F0010FB77 /* barcode.png */; };
+		39D5616A19453B5F0010FB77 /* barcode44.png in Resources */ = {isa = PBXBuildFile; fileRef = 39D5616719453B5F0010FB77 /* barcode44.png */; };
+		39D5620D1945BA490010FB77 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D561FB1945BA490010FB77 /* AFHTTPRequestOperation.m */; };
+		39D5620E1945BA490010FB77 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D561FD1945BA490010FB77 /* AFHTTPRequestOperationManager.m */; };
+		39D5620F1945BA490010FB77 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D561FF1945BA490010FB77 /* AFHTTPSessionManager.m */; };
+		39D562101945BA490010FB77 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D562021945BA490010FB77 /* AFNetworkReachabilityManager.m */; };
+		39D562111945BA490010FB77 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D562041945BA490010FB77 /* AFSecurityPolicy.m */; };
+		39D562121945BA490010FB77 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D562061945BA490010FB77 /* AFURLConnectionOperation.m */; };
+		39D562131945BA490010FB77 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D562081945BA490010FB77 /* AFURLRequestSerialization.m */; };
+		39D562141945BA490010FB77 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D5620A1945BA490010FB77 /* AFURLResponseSerialization.m */; };
+		39D562151945BA490010FB77 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D5620C1945BA490010FB77 /* AFURLSessionManager.m */; };
+		39D562211945BF2C0010FB77 /* libNutritionix_iOS_Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D562201945BF2C0010FB77 /* libNutritionix_iOS_Library.a */; };
+		39D562231945BF910010FB77 /* BarCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D562221945BF910010FB77 /* BarCodeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39D560E41944D2AB0010FB77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39D560B61944D2AA0010FB77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39D560BD1944D2AA0010FB77;
+			remoteInfo = NutritionixExample;
+		};
+		39D561AC1945B6100010FB77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39D561A61945B6100010FB77 /* Nutritionix_iOS_Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 39D55FCF1944644B0010FB77;
+			remoteInfo = Nutritionix_iOS_Library;
+		};
+		39D561AE1945B6100010FB77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39D561A61945B6100010FB77 /* Nutritionix_iOS_Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 39D55FDF1944644B0010FB77;
+			remoteInfo = Nutritionix_iOS_LibraryTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39D560BE1944D2AB0010FB77 /* NutritionixExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionixExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D560C11944D2AB0010FB77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		39D560C31944D2AB0010FB77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		39D560C51944D2AB0010FB77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		39D560C91944D2AB0010FB77 /* NutritionixExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NutritionixExample-Info.plist"; sourceTree = "<group>"; };
+		39D560CB1944D2AB0010FB77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		39D560CD1944D2AB0010FB77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39D560CF1944D2AB0010FB77 /* NutritionixExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NutritionixExample-Prefix.pch"; sourceTree = "<group>"; };
+		39D560D01944D2AB0010FB77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39D560D11944D2AB0010FB77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		39D560D41944D2AB0010FB77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39D560D61944D2AB0010FB77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		39D560D71944D2AB0010FB77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39D560D91944D2AB0010FB77 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		39D560DF1944D2AB0010FB77 /* NutritionixExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutritionixExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D560E01944D2AB0010FB77 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		39D560E81944D2AB0010FB77 /* NutritionixExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NutritionixExampleTests-Info.plist"; sourceTree = "<group>"; };
+		39D560EA1944D2AB0010FB77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		39D560EC1944D2AB0010FB77 /* NutritionixExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NutritionixExampleTests.m; sourceTree = "<group>"; };
+		39D560FA1944D32E0010FB77 /* barcodeBeep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = barcodeBeep.mp3; sourceTree = "<group>"; };
+		39D560FC1944D3430010FB77 /* commonFoods.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commonFoods.png; sourceTree = "<group>"; };
+		39D560FD1944D3430010FB77 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		39D560FE1944D3430010FB77 /* nutritionix29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nutritionix29.png; sourceTree = "<group>"; };
+		39D560FF1944D3430010FB77 /* nutritionix40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nutritionix40.png; sourceTree = "<group>"; };
+		39D561001944D3430010FB77 /* nutritionix58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nutritionix58.png; sourceTree = "<group>"; };
+		39D561011944D3430010FB77 /* nutritionix60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nutritionix60.png; sourceTree = "<group>"; };
+		39D561021944D3430010FB77 /* nutritionix80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nutritionix80.png; sourceTree = "<group>"; };
+		39D561031944D3430010FB77 /* nutritionix160.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nutritionix160.png; sourceTree = "<group>"; };
+		39D561041944D3430010FB77 /* packagedFoods.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = packagedFoods.png; sourceTree = "<group>"; };
+		39D561051944D3430010FB77 /* restaurant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restaurant.png; sourceTree = "<group>"; };
+		39D561151944D42A0010FB77 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		39D561161944D42A0010FB77 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		39D561171944D42A0010FB77 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		39D561181944D42A0010FB77 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		39D5611B1944D4490010FB77 /* BarCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeViewController.h; sourceTree = "<group>"; };
+		39D5611F1944D47D0010FB77 /* BarCodeScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeScannerViewController.h; sourceTree = "<group>"; };
+		39D561201944D47D0010FB77 /* BarCodeScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeScannerViewController.m; sourceTree = "<group>"; };
+		39D5616519453B5F0010FB77 /* barcode-icon-614x460.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barcode-icon-614x460.png"; sourceTree = "<group>"; };
+		39D5616619453B5F0010FB77 /* barcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barcode.png; sourceTree = "<group>"; };
+		39D5616719453B5F0010FB77 /* barcode44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barcode44.png; sourceTree = "<group>"; };
+		39D5616B19453E900010FB77 /* NutritionixDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NutritionixDefines.h; sourceTree = "<group>"; };
+		39D561A61945B6100010FB77 /* Nutritionix_iOS_Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nutritionix_iOS_Library.xcodeproj; path = ../Nutritionix_iOS_Library/Nutritionix_iOS_Library.xcodeproj; sourceTree = "<group>"; };
+		39D561CC1945B6FB0010FB77 /* LibConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibConstants.h; sourceTree = "<group>"; };
+		39D561CD1945B6FB0010FB77 /* Nutritionix_iOS_Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nutritionix_iOS_Library.h; sourceTree = "<group>"; };
+		39D561FA1945BA490010FB77 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		39D561FB1945BA490010FB77 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		39D561FC1945BA490010FB77 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		39D561FD1945BA490010FB77 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		39D561FE1945BA490010FB77 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		39D561FF1945BA490010FB77 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		39D562001945BA490010FB77 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		39D562011945BA490010FB77 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		39D562021945BA490010FB77 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		39D562031945BA490010FB77 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		39D562041945BA490010FB77 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		39D562051945BA490010FB77 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		39D562061945BA490010FB77 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		39D562071945BA490010FB77 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		39D562081945BA490010FB77 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		39D562091945BA490010FB77 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		39D5620A1945BA490010FB77 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		39D5620B1945BA490010FB77 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		39D5620C1945BA490010FB77 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		39D562201945BF2C0010FB77 /* libNutritionix_iOS_Library.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNutritionix_iOS_Library.a; sourceTree = "<group>"; };
+		39D562221945BF910010FB77 /* BarCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39D560BB1944D2AA0010FB77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D560C41944D2AB0010FB77 /* CoreGraphics.framework in Frameworks */,
+				39D562211945BF2C0010FB77 /* libNutritionix_iOS_Library.a in Frameworks */,
+				39D560C61944D2AB0010FB77 /* UIKit.framework in Frameworks */,
+				39D560C21944D2AB0010FB77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D560DC1944D2AB0010FB77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D560E11944D2AB0010FB77 /* XCTest.framework in Frameworks */,
+				39D560E31944D2AB0010FB77 /* UIKit.framework in Frameworks */,
+				39D560E21944D2AB0010FB77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39D560B51944D2AA0010FB77 = {
+			isa = PBXGroup;
+			children = (
+				39D561A61945B6100010FB77 /* Nutritionix_iOS_Library.xcodeproj */,
+				39D560C71944D2AB0010FB77 /* NutritionixExample */,
+				39D560E61944D2AB0010FB77 /* NutritionixExampleTests */,
+				39D560C01944D2AB0010FB77 /* Frameworks */,
+				39D561B41945B6FB0010FB77 /* 3rdParty */,
+				39D561221944D50F0010FB77 /* Library */,
+			);
+			sourceTree = "<group>";
+		};
+		39D560BF1944D2AB0010FB77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39D560BE1944D2AB0010FB77 /* NutritionixExample.app */,
+				39D560DF1944D2AB0010FB77 /* NutritionixExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39D560C01944D2AB0010FB77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39D560C11944D2AB0010FB77 /* Foundation.framework */,
+				39D560C31944D2AB0010FB77 /* CoreGraphics.framework */,
+				39D560C51944D2AB0010FB77 /* UIKit.framework */,
+				39D560E01944D2AB0010FB77 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39D560C71944D2AB0010FB77 /* NutritionixExample */ = {
+			isa = PBXGroup;
+			children = (
+				39D560F61944D30A0010FB77 /* Classes */,
+				39D560F71944D3190010FB77 /* Resources */,
+				39D560D91944D2AB0010FB77 /* Images.xcassets */,
+				39D560C81944D2AB0010FB77 /* Supporting Files */,
+			);
+			path = NutritionixExample;
+			sourceTree = "<group>";
+		};
+		39D560C81944D2AB0010FB77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39D560C91944D2AB0010FB77 /* NutritionixExample-Info.plist */,
+				39D560CA1944D2AB0010FB77 /* InfoPlist.strings */,
+				39D560CD1944D2AB0010FB77 /* main.m */,
+				39D560CF1944D2AB0010FB77 /* NutritionixExample-Prefix.pch */,
+				39D5616B19453E900010FB77 /* NutritionixDefines.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39D560E61944D2AB0010FB77 /* NutritionixExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				39D560EC1944D2AB0010FB77 /* NutritionixExampleTests.m */,
+				39D560E71944D2AB0010FB77 /* Supporting Files */,
+			);
+			path = NutritionixExampleTests;
+			sourceTree = "<group>";
+		};
+		39D560E71944D2AB0010FB77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39D560E81944D2AB0010FB77 /* NutritionixExampleTests-Info.plist */,
+				39D560E91944D2AB0010FB77 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39D560F61944D30A0010FB77 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				39D561121944D39F0010FB77 /* App Delegate */,
+				39D5616C19453F6D0010FB77 /* UI */,
+				39D561141944D4080010FB77 /* Utility */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		39D560F71944D3190010FB77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39D560F81944D31F0010FB77 /* Images */,
+				39D560F91944D3230010FB77 /* Sounds */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		39D560F81944D31F0010FB77 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				39D5616519453B5F0010FB77 /* barcode-icon-614x460.png */,
+				39D5616619453B5F0010FB77 /* barcode.png */,
+				39D5616719453B5F0010FB77 /* barcode44.png */,
+				39D560FC1944D3430010FB77 /* commonFoods.png */,
+				39D560FD1944D3430010FB77 /* logo.png */,
+				39D560FE1944D3430010FB77 /* nutritionix29.png */,
+				39D560FF1944D3430010FB77 /* nutritionix40.png */,
+				39D561001944D3430010FB77 /* nutritionix58.png */,
+				39D561011944D3430010FB77 /* nutritionix60.png */,
+				39D561021944D3430010FB77 /* nutritionix80.png */,
+				39D561031944D3430010FB77 /* nutritionix160.png */,
+				39D561041944D3430010FB77 /* packagedFoods.png */,
+				39D561051944D3430010FB77 /* restaurant.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		39D560F91944D3230010FB77 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				39D560FA1944D32E0010FB77 /* barcodeBeep.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		39D561121944D39F0010FB77 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				39D560D01944D2AB0010FB77 /* AppDelegate.h */,
+				39D560D11944D2AB0010FB77 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		39D561131944D3FD0010FB77 /* BarCodeScannerView */ = {
+			isa = PBXGroup;
+			children = (
+				39D5611B1944D4490010FB77 /* BarCodeViewController.h */,
+				39D562221945BF910010FB77 /* BarCodeViewController.m */,
+			);
+			name = BarCodeScannerView;
+			sourceTree = "<group>";
+		};
+		39D561141944D4080010FB77 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				39D561151944D42A0010FB77 /* Constants.h */,
+				39D561161944D42A0010FB77 /* Constants.m */,
+				39D561171944D42A0010FB77 /* Utility.h */,
+				39D561181944D42A0010FB77 /* Utility.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		39D5611E1944D44E0010FB77 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				39D5611F1944D47D0010FB77 /* BarCodeScannerViewController.h */,
+				39D561201944D47D0010FB77 /* BarCodeScannerViewController.m */,
+			);
+			name = Scanner;
+			sourceTree = "<group>";
+		};
+		39D561221944D50F0010FB77 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				39D561C91945B6FB0010FB77 /* NutritionixLib */,
+				39D560BF1944D2AB0010FB77 /* Products */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		39D5616C19453F6D0010FB77 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				39D560D31944D2AB0010FB77 /* Main.storyboard */,
+				39D561131944D3FD0010FB77 /* BarCodeScannerView */,
+				39D5611E1944D44E0010FB77 /* Scanner */,
+				39D560D61944D2AB0010FB77 /* ViewController.h */,
+				39D560D71944D2AB0010FB77 /* ViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		39D561A71945B6100010FB77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39D561AD1945B6100010FB77 /* libNutritionix_iOS_Library.a */,
+				39D561AF1945B6100010FB77 /* Nutritionix_iOS_LibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39D561B41945B6FB0010FB77 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				39D561F91945BA390010FB77 /* AF Networking */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		39D561C91945B6FB0010FB77 /* NutritionixLib */ = {
+			isa = PBXGroup;
+			children = (
+				39D562201945BF2C0010FB77 /* libNutritionix_iOS_Library.a */,
+				39D561CA1945B6FB0010FB77 /* include */,
+			);
+			name = NutritionixLib;
+			path = 3rdParty/NutritionixLib;
+			sourceTree = "<group>";
+		};
+		39D561CA1945B6FB0010FB77 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				39D561CB1945B6FB0010FB77 /* Nutritionix_iOS_Library */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		39D561CB1945B6FB0010FB77 /* Nutritionix_iOS_Library */ = {
+			isa = PBXGroup;
+			children = (
+				39D561CC1945B6FB0010FB77 /* LibConstants.h */,
+				39D561CD1945B6FB0010FB77 /* Nutritionix_iOS_Library.h */,
+			);
+			path = Nutritionix_iOS_Library;
+			sourceTree = "<group>";
+		};
+		39D561F91945BA390010FB77 /* AF Networking */ = {
+			isa = PBXGroup;
+			children = (
+				39D561FA1945BA490010FB77 /* AFHTTPRequestOperation.h */,
+				39D561FB1945BA490010FB77 /* AFHTTPRequestOperation.m */,
+				39D561FC1945BA490010FB77 /* AFHTTPRequestOperationManager.h */,
+				39D561FD1945BA490010FB77 /* AFHTTPRequestOperationManager.m */,
+				39D561FE1945BA490010FB77 /* AFHTTPSessionManager.h */,
+				39D561FF1945BA490010FB77 /* AFHTTPSessionManager.m */,
+				39D562001945BA490010FB77 /* AFNetworking.h */,
+				39D562011945BA490010FB77 /* AFNetworkReachabilityManager.h */,
+				39D562021945BA490010FB77 /* AFNetworkReachabilityManager.m */,
+				39D562031945BA490010FB77 /* AFSecurityPolicy.h */,
+				39D562041945BA490010FB77 /* AFSecurityPolicy.m */,
+				39D562051945BA490010FB77 /* AFURLConnectionOperation.h */,
+				39D562061945BA490010FB77 /* AFURLConnectionOperation.m */,
+				39D562071945BA490010FB77 /* AFURLRequestSerialization.h */,
+				39D562081945BA490010FB77 /* AFURLRequestSerialization.m */,
+				39D562091945BA490010FB77 /* AFURLResponseSerialization.h */,
+				39D5620A1945BA490010FB77 /* AFURLResponseSerialization.m */,
+				39D5620B1945BA490010FB77 /* AFURLSessionManager.h */,
+				39D5620C1945BA490010FB77 /* AFURLSessionManager.m */,
+			);
+			name = "AF Networking";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39D560BD1944D2AA0010FB77 /* NutritionixExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39D560F01944D2AB0010FB77 /* Build configuration list for PBXNativeTarget "NutritionixExample" */;
+			buildPhases = (
+				39D560BA1944D2AA0010FB77 /* Sources */,
+				39D560BB1944D2AA0010FB77 /* Frameworks */,
+				39D560BC1944D2AA0010FB77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NutritionixExample;
+			productName = NutritionixExample;
+			productReference = 39D560BE1944D2AB0010FB77 /* NutritionixExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39D560DE1944D2AB0010FB77 /* NutritionixExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39D560F31944D2AB0010FB77 /* Build configuration list for PBXNativeTarget "NutritionixExampleTests" */;
+			buildPhases = (
+				39D560DB1944D2AB0010FB77 /* Sources */,
+				39D560DC1944D2AB0010FB77 /* Frameworks */,
+				39D560DD1944D2AB0010FB77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39D560E51944D2AB0010FB77 /* PBXTargetDependency */,
+			);
+			name = NutritionixExampleTests;
+			productName = NutritionixExampleTests;
+			productReference = 39D560DF1944D2AB0010FB77 /* NutritionixExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39D560B61944D2AA0010FB77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Peter Kasson";
+				TargetAttributes = {
+					39D560BD1944D2AA0010FB77 = {
+						DevelopmentTeam = RM537M4JR3;
+					};
+					39D560DE1944D2AB0010FB77 = {
+						TestTargetID = 39D560BD1944D2AA0010FB77;
+					};
+				};
+			};
+			buildConfigurationList = 39D560B91944D2AA0010FB77 /* Build configuration list for PBXProject "NutritionixExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39D560B51944D2AA0010FB77;
+			productRefGroup = 39D560BF1944D2AB0010FB77 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 39D561A71945B6100010FB77 /* Products */;
+					ProjectRef = 39D561A61945B6100010FB77 /* Nutritionix_iOS_Library.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				39D560BD1944D2AA0010FB77 /* NutritionixExample */,
+				39D560DE1944D2AB0010FB77 /* NutritionixExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		39D561AD1945B6100010FB77 /* libNutritionix_iOS_Library.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNutritionix_iOS_Library.a;
+			remoteRef = 39D561AC1945B6100010FB77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		39D561AF1945B6100010FB77 /* Nutritionix_iOS_LibraryTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Nutritionix_iOS_LibraryTests.xctest;
+			remoteRef = 39D561AE1945B6100010FB77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39D560BC1944D2AA0010FB77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D561081944D3430010FB77 /* nutritionix29.png in Resources */,
+				39D5610D1944D3430010FB77 /* nutritionix160.png in Resources */,
+				39D5610F1944D3430010FB77 /* restaurant.png in Resources */,
+				39D5610B1944D3430010FB77 /* nutritionix60.png in Resources */,
+				39D5616819453B5F0010FB77 /* barcode-icon-614x460.png in Resources */,
+				39D560DA1944D2AB0010FB77 /* Images.xcassets in Resources */,
+				39D5610A1944D3430010FB77 /* nutritionix58.png in Resources */,
+				39D560FB1944D32E0010FB77 /* barcodeBeep.mp3 in Resources */,
+				39D561071944D3430010FB77 /* logo.png in Resources */,
+				39D560CC1944D2AB0010FB77 /* InfoPlist.strings in Resources */,
+				39D561091944D3430010FB77 /* nutritionix40.png in Resources */,
+				39D560D51944D2AB0010FB77 /* Main.storyboard in Resources */,
+				39D561061944D3430010FB77 /* commonFoods.png in Resources */,
+				39D5610C1944D3430010FB77 /* nutritionix80.png in Resources */,
+				39D5616A19453B5F0010FB77 /* barcode44.png in Resources */,
+				39D5616919453B5F0010FB77 /* barcode.png in Resources */,
+				39D5610E1944D3430010FB77 /* packagedFoods.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D560DD1944D2AB0010FB77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D560EB1944D2AB0010FB77 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39D560BA1944D2AA0010FB77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D562121945BA490010FB77 /* AFURLConnectionOperation.m in Sources */,
+				39D562231945BF910010FB77 /* BarCodeViewController.m in Sources */,
+				39D560D81944D2AB0010FB77 /* ViewController.m in Sources */,
+				39D560D21944D2AB0010FB77 /* AppDelegate.m in Sources */,
+				39D562141945BA490010FB77 /* AFURLResponseSerialization.m in Sources */,
+				39D5611A1944D42A0010FB77 /* Utility.m in Sources */,
+				39D562131945BA490010FB77 /* AFURLRequestSerialization.m in Sources */,
+				39D562111945BA490010FB77 /* AFSecurityPolicy.m in Sources */,
+				39D5620D1945BA490010FB77 /* AFHTTPRequestOperation.m in Sources */,
+				39D562151945BA490010FB77 /* AFURLSessionManager.m in Sources */,
+				39D560CE1944D2AB0010FB77 /* main.m in Sources */,
+				39D561211944D47D0010FB77 /* BarCodeScannerViewController.m in Sources */,
+				39D5620F1945BA490010FB77 /* AFHTTPSessionManager.m in Sources */,
+				39D561191944D42A0010FB77 /* Constants.m in Sources */,
+				39D562101945BA490010FB77 /* AFNetworkReachabilityManager.m in Sources */,
+				39D5620E1945BA490010FB77 /* AFHTTPRequestOperationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D560DB1944D2AB0010FB77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D560ED1944D2AB0010FB77 /* NutritionixExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39D560E51944D2AB0010FB77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39D560BD1944D2AA0010FB77 /* NutritionixExample */;
+			targetProxy = 39D560E41944D2AB0010FB77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39D560CA1944D2AB0010FB77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39D560CB1944D2AB0010FB77 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		39D560D31944D2AB0010FB77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39D560D41944D2AB0010FB77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39D560E91944D2AB0010FB77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39D560EA1944D2AB0010FB77 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39D560EE1944D2AB0010FB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		39D560EF1944D2AB0010FB77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		39D560F11944D2AB0010FB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NutritionixExample/NutritionixExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SOURCE_ROOT/include,
+				);
+				INFOPLIST_FILE = "NutritionixExample/NutritionixExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/3rdParty/NutritionixLib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		39D560F21944D2AB0010FB77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NutritionixExample/NutritionixExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SOURCE_ROOT/include,
+				);
+				INFOPLIST_FILE = "NutritionixExample/NutritionixExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/3rdParty/NutritionixLib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		39D560F41944D2AB0010FB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NutritionixExample.app/NutritionixExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NutritionixExample/NutritionixExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NutritionixExampleTests/NutritionixExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		39D560F51944D2AB0010FB77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NutritionixExample.app/NutritionixExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NutritionixExample/NutritionixExample-Prefix.pch";
+				INFOPLIST_FILE = "NutritionixExampleTests/NutritionixExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39D560B91944D2AA0010FB77 /* Build configuration list for PBXProject "NutritionixExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D560EE1944D2AB0010FB77 /* Debug */,
+				39D560EF1944D2AB0010FB77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39D560F01944D2AB0010FB77 /* Build configuration list for PBXNativeTarget "NutritionixExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D560F11944D2AB0010FB77 /* Debug */,
+				39D560F21944D2AB0010FB77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39D560F31944D2AB0010FB77 /* Build configuration list for PBXNativeTarget "NutritionixExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D560F41944D2AB0010FB77 /* Debug */,
+				39D560F51944D2AB0010FB77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39D560B61944D2AA0010FB77 /* Project object */;
+}

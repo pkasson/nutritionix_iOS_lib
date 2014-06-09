@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>Nutritionix API Url</key>
+	<string>https://api.nutritionix.com/v1_1/</string>
+	<key>Nutritionix App Id</key>
+	<string>your_appid_here</string>
+	<key>Nutritionix App Key</key>
+	<string>your_key_here</string>
+</dict>
+</plist>
