@@ -158,14 +158,23 @@ BOOL notificationInitialized = NO;
  
  NSDictionary *jsonDictionary = [Utility callNutritionixWithUPC:barcode];
  
- NSMutableArray *data = [[NSMutableArray alloc] init];
+ NSString *status = [jsonDictionary objectForKey:SCAN_STATUS];
  
- [data addObject:barcode];
- [data addObject:jsonDictionary];
-
+ if([status isEqualToString:SCAN_SUCCESS])                     // in the event something went wrong, check for success first
+ {
+  NSMutableArray *data = [[NSMutableArray alloc] init];
+  
+  [data addObject:barcode];
+  [data addObject:jsonDictionary];
+  
+  [self showScanResults:data];
+ }
+ else
+ {
+  [Utility alertError:@"Error occurred during scan"];
+ }
+ 
  bcvc = nil;
-
- [self showScanResults:data];
 }
 
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39C2ED5D1945ED7F001075A0 /* libNutritionix_iOS_Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C2ED5C1945ED7F001075A0 /* libNutritionix_iOS_Library.a */; };
+		39C2ED6319470795001075A0 /* libNutritionix_iOS_Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C2ED6219470795001075A0 /* libNutritionix_iOS_Library.a */; };
 		39D560C21944D2AB0010FB77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D560C11944D2AB0010FB77 /* Foundation.framework */; };
 		39D560C41944D2AB0010FB77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D560C31944D2AB0010FB77 /* CoreGraphics.framework */; };
 		39D560C61944D2AB0010FB77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D560C51944D2AB0010FB77 /* UIKit.framework */; };
@@ -78,7 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		39C2ED5C1945ED7F001075A0 /* libNutritionix_iOS_Library.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNutritionix_iOS_Library.a; sourceTree = "<group>"; };
+		39C2ED6219470795001075A0 /* libNutritionix_iOS_Library.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNutritionix_iOS_Library.a; sourceTree = "<group>"; };
 		39D560BE1944D2AB0010FB77 /* NutritionixExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionixExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D560C11944D2AB0010FB77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		39D560C31944D2AB0010FB77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -153,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D560C41944D2AB0010FB77 /* CoreGraphics.framework in Frameworks */,
-				39C2ED5D1945ED7F001075A0 /* libNutritionix_iOS_Library.a in Frameworks */,
+				39C2ED6319470795001075A0 /* libNutritionix_iOS_Library.a in Frameworks */,
 				39D560C61944D2AB0010FB77 /* UIKit.framework in Frameworks */,
 				39D560C21944D2AB0010FB77 /* Foundation.framework in Frameworks */,
 			);
@@ -335,6 +335,7 @@
 		39D561221944D50F0010FB77 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				39C2ED6219470795001075A0 /* libNutritionix_iOS_Library.a */,
 				39D561C91945B6FB0010FB77 /* NutritionixLib */,
 				39D560BF1944D2AB0010FB77 /* Products */,
 			);
@@ -373,7 +374,6 @@
 		39D561C91945B6FB0010FB77 /* NutritionixLib */ = {
 			isa = PBXGroup;
 			children = (
-				39C2ED5C1945ED7F001075A0 /* libNutritionix_iOS_Library.a */,
 				39D561CA1945B6FB0010FB77 /* include */,
 			);
 			name = NutritionixLib;

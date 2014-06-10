@@ -10,6 +10,7 @@
 
 #import "BarCodeViewController.h"
 #import "Constants.h"
+#import "LibConstants.h"
 #import "Utility.h"
 
 @interface BarCodeScannerViewController : UIViewController

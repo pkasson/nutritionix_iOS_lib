@@ -27,4 +27,9 @@ extern NSString * const PLIST_FILENAME;
 
 extern NSString * const BARCODE_SCANNED;
 
+extern NSString * const SCAN_STATUS;
+
+extern NSString * const SCAN_SUCCESS;
+extern NSString * const SCAN_ERROR;
+
 @end
