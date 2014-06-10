@@ -96,9 +96,9 @@ NSString *appKey;
 /*
  * call Nutitionix with wait (ensuring 'synchronous' call structure)
  */
-+ (NSDictionary *) callNutritionixWithUPCAndWait :(NSString *) upc
++ (NSMutableDictionary *) callNutritionixWithUPCAndWait :(NSString *) upc
 {
- NSDictionary *response;
+ NSMutableDictionary *response;
 
  NSError *error;
 
@@ -125,13 +125,23 @@ NSString *appKey;
   // convert NSData response to JSON, via dictionary converter
   response = [NSJSONSerialization JSONObjectWithData: [operation responseObject] options: NSJSONReadingMutableContainers error: &error];
   
+  [response setValue:SCAN_SUCCESS forKey:SCAN_STATUS];     // 1 = success, 0 = error
+  
   if(!error)
   {
+   response = [[NSMutableDictionary alloc] init];
+   
+   [response setValue:SCAN_ERROR forKey:SCAN_STATUS];      // 1 = success, 0 = error
+
    NSLog(@"Nutritionix API - successful response:  %@", response);
   }
  }
  else
  {
+  response = [[NSMutableDictionary alloc] init];
+
+  [response setValue:SCAN_ERROR forKey:SCAN_STATUS];      // 1 = success, 0 = error
+
   NSLog(@">>>  Nutritionix API call error:  %ld, message:  %@", httpStatus, error);
  }
  

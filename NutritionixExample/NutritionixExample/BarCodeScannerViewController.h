@@ -20,6 +20,8 @@
  __weak IBOutlet UILabel *lblDescription;
  __weak IBOutlet UILabel *lblCalories;
  
+ __weak IBOutlet UIButton *btnType;
+ 
  NSString *selectedItem;
 }
 
@@ -29,6 +31,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblDescription;
 @property (weak, nonatomic) IBOutlet UILabel *lblCalories;
 
+@property (weak, nonatomic) IBOutlet UIButton *btnType;
 
 @property (strong, nonatomic) NSString *selectedItem;
 

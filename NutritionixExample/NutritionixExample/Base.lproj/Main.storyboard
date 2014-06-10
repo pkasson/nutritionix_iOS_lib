@@ -21,33 +21,33 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZc-AK-hLt">
-                                <rect key="frame" x="42" y="162" width="237" height="90"/>
+                                <rect key="frame" x="42" y="141" width="237" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Restaurants       " image="restaurant.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mFf-Y0-KOe" kind="modal" identifier="idRestaurants" id="rkp-pL-JWU"/>
+                                    <segue destination="mFf-Y0-KOe" kind="modal" identifier="restaurant" id="rkp-pL-JWU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmG-si-lOb">
-                                <rect key="frame" x="42" y="260" width="237" height="90"/>
+                                <rect key="frame" x="42" y="239" width="237" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Packaged Foods" image="packagedFoods.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mFf-Y0-KOe" kind="modal" identifier="idPackagedFoods" id="dtv-41-sxb"/>
+                                    <segue destination="mFf-Y0-KOe" kind="modal" identifier="packagedFoods" id="dtv-41-sxb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJw-nE-wby">
-                                <rect key="frame" x="42" y="358" width="237" height="90"/>
+                                <rect key="frame" x="42" y="337" width="237" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Common Foods  " image="commonFoods.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mFf-Y0-KOe" kind="modal" identifier="idCommonFoods" id="fGk-ZN-XpP"/>
+                                    <segue destination="mFf-Y0-KOe" kind="modal" identifier="commonFoods" id="fGk-ZN-XpP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,12 +73,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIO-RV-Vmp">
                                 <rect key="frame" x="20" y="84" width="237" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Restaurants       " image="restaurant.png">
+                                <state key="normal" title="Restaurants       ">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brp-p9-PQZ">
-                                <rect key="frame" x="88" y="455" width="145" height="51"/>
+                                <rect key="frame" x="88" y="407" width="145" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="   Scan" image="barcode44.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -164,6 +164,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="btnType" destination="jIO-RV-Vmp" id="PMD-AL-lcQ"/>
                         <outlet property="lblBarcode" destination="X7e-O8-rxg" id="JDn-31-8ad"/>
                         <outlet property="lblBrand" destination="i7e-eY-l4f" id="k2A-Kx-RAB"/>
                         <outlet property="lblCalories" destination="aeh-lj-Ovk" id="Zr4-0W-wti"/>
@@ -190,6 +191,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fGk-ZN-XpP"/>
+        <segue reference="rkp-pL-JWU"/>
     </inferredMetricsTieBreakers>
 </document>

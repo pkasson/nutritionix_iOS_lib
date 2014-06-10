@@ -23,8 +23,16 @@ extern NSString * const APP_ID;
 extern NSString * const APP_KEY;
 extern NSString * const APP_API_URL;
 
+extern NSString * const LIB_VERSION;
+
 extern NSString * const PLIST_FILENAME;
 
 extern NSString * const BARCODE_SCANNED;
+
+extern NSString * const SCAN_STATUS;
+
+extern NSString * const SCAN_SUCCESS;
+extern NSString * const SCAN_ERROR;
+
 
 @end

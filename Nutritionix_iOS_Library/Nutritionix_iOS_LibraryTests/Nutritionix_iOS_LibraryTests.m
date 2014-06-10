@@ -59,6 +59,7 @@ BOOL usingCallback    = NO;
  NSString *appId  = @"";
  NSString *appKey = @"";
 
+ NSLog(@"%@ version %@", kApplicationName, LIB_VERSION);
  
  [Nutritionix_iOS_Library initProperties:@"https://api.nutritionix.com/v1_1/" :appId :appKey];
 
@@ -108,11 +109,34 @@ BOOL usingCallback    = NO;
 
  NSDictionary *jsonDictionary = [Nutritionix_iOS_Library callNutritionixWithUPCAndWait:upcCode];
 
+ NSString *status = [jsonDictionary objectForKey:SCAN_STATUS];
+
+ if([status isEqualToString:SCAN_SUCCESS])                     // in the event something went wrong, check for success first
+ {
+  XCTAssertTrue(jsonDictionary != nil, @"No data returned from Nutritionix API service call");
+  
+  NSString *itemName = [jsonDictionary objectForKey:@"item_name"];
+  
+  XCTAssertTrue([itemName hasPrefix:chocolateSnackName], @"Incorrect item name returned from Nutritionix API service call");
+ }
+}
+
+
+/*
+ * this test should succeed in finding an error, no app id or key has been set, and this should result in an HTTP 40x (401)
+ *
+ */
+- (void) testUPCLookupError
+{
+ NSString *upcCode            = @"";
+ 
+ NSDictionary *jsonDictionary = [Nutritionix_iOS_Library callNutritionixWithUPCAndWait:upcCode];
+ 
  XCTAssertTrue(jsonDictionary != nil, @"No data returned from Nutritionix API service call");
  
- NSString *itemName = [jsonDictionary objectForKey:@"item_name"];
+ NSString *status = [jsonDictionary objectForKey:SCAN_STATUS];
  
- XCTAssertTrue([itemName hasPrefix:chocolateSnackName], @"Incorrect item name returned from Nutritionix API service call");
+ XCTAssertTrue([status isEqualToString:SCAN_ERROR], @"This API call should have resulted in an error");
 }
 
 

@@ -20,9 +20,13 @@
 @synthesize lblDescription;
 @synthesize lblCalories;
 
+@synthesize btnType;
+
 @synthesize selectedItem;
 
 BarCodeViewController *bcvc;
+
+NSMutableDictionary *types;
 
 NSString *upc;
 
@@ -39,9 +43,23 @@ BOOL notificationInitialized = NO;
  
  if (self)
  {
+  [self initSettings];
  }
  
  return self;
+}
+
+
+/*
+ * init any needed app setttings
+ */
+- (void) initSettings
+{
+ types = [[NSMutableDictionary alloc] init];
+ 
+ [types setValue:@"Common Foods"   forKey:@"commonFoods"];
+ [types setValue:@"Packaged Foods" forKey:@"packagedFoods"];
+ [types setValue:@"Restaurant"     forKey:@"restaurant"];
 }
 
 
@@ -77,6 +95,8 @@ BOOL notificationInitialized = NO;
   
   [self initNotifications];
  }
+
+ [self initSelectedActionImage];             // change image based on selection
  
  NSLog(@"selectedItem:  %@", selectedItem);
 }
@@ -214,6 +234,31 @@ BOOL notificationInitialized = NO;
  }
  
  // NSLog(@"item:  %@, name:  %@, brand:  %@, description:  %@, calories:  %@", itemId, itemName, brandName, itemDescription, calories);
+}
+
+
+// ------------------------------------------------------------
+//
+// Logic
+//
+// ------------------------------------------------------------
+#pragma mark - Logic
+
+
+/*
+ * based on the seque that was selected, update the image to match
+ */
+- (void) initSelectedActionImage
+{
+ if(types == nil)
+ {
+  [self initSettings];
+ }
+ 
+ [btnType setTitle:[types objectForKey:selectedItem] forState:UIControlStateNormal];
+ 
+ UIImage *actionImage = [UIImage imageNamed:[@"" stringByAppendingFormat:@"%@.png", selectedItem]];
+ [btnType setImage:actionImage forState:UIControlStateNormal];
 }
 
 
